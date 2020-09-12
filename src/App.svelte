@@ -1,9 +1,9 @@
 <script>
-  import { Router } from 'svelte-routing'
-  import Route from './routes/Route.svelte'
-  import Navbar from './components/Navbar.svelte'
+  import { Router } from 'svelte-routing';
+  import Route from './routes/Route.svelte';
+  import Navbar from './components/Navbar.svelte';
 
-  export let url
+  export let url;
 </script>
 
 <Router {url}>
