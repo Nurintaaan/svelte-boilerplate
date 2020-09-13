@@ -9,7 +9,6 @@ describe('Pages/Home', () => {
     const { getByTestId } = render(Home);
     const button = getByTestId('counter-button');
 
-    // Option 1.
     await fireEvent.click(button);
     expect(button).toHaveTextContent('Count is 1');
   });
