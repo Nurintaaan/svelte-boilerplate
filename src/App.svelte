@@ -4,8 +4,8 @@
 
   import Navbar from './components/Navbar.svelte';
   import routes from './routes';
-  
-  createRouter({routes});
+
+  createRouter({ routes });
 </script>
 
 <Navbar />
