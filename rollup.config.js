@@ -1,3 +1,4 @@
+import babel from 'rollup-plugin-babel';
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -41,7 +42,6 @@ export default {
   },
   plugins: [
     svelte({
-      hydratable: true,
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
@@ -73,6 +73,10 @@ export default {
     // If we're building for production (npm run build
     // instead of npm run dev), minify
     production && terser(),
+
+    babel({
+      exclude: 'node_modules/**',
+    }),
   ],
   watch: {
     clearScreen: false,

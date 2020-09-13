@@ -1,8 +1,8 @@
 <script>
-  import { Link } from 'svelte-routing';
+  import RouterLink from '@spaceavocado/svelte-router/component/link';
 </script>
 
 <nav>
-  <Link to="/">Home</Link>
-  <Link to="about">About</Link>
+  <RouterLink to='/'>Home</RouterLink>
+  <RouterLink to='/about'>About</RouterLink>
 </nav>

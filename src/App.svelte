@@ -1,12 +1,12 @@
 <script>
-  import { Router } from 'svelte-routing';
-  import Route from './routes/Route.svelte';
-  import Navbar from './components/Navbar.svelte';
+  import createRouter from '@spaceavocado/svelte-router';
+  import RouterView from '@spaceavocado/svelte-router/component/view';
 
-  export let url;
+  import Navbar from './components/Navbar.svelte';
+  import routes from './routes';
+  
+  createRouter({routes});
 </script>
 
-<Router {url}>
-  <Navbar />
-  <Route />
-</Router>
+<Navbar />
+<RouterView />
