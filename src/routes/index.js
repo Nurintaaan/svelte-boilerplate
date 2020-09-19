@@ -4,11 +4,12 @@ import About from '../pages/About.svelte';
 const routes = [
   {
     path: '/',
-    name: 'HOME',
+    name: 'Home',
     component: Home,
   },
   {
     path: '/about',
+    name: 'About',
     component: About,
   },
 ];

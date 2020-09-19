@@ -11,23 +11,18 @@ module.exports = {
       display: ['Gilroy', 'sans-serif'],
       body: ['Graphik', 'sans-serif'],
     },
-    borderWidth: {
-      default: '1px',
-      '0': '0',
-      '2': '2px',
-      '4': '4px',
-    },
-    extend: {
-      colors: {
-        cyan: '#9cdbff',
+    colors: {
+      green: {
+        lightest: '#DADDD8',
+        light: '#C7D59F',
+        medium: '#B7CE63',
+        dark: '#8FB339',
+        darkest: '#4B5842',
       },
-      spacing: {
-        '96': '24rem',
-        '128': '32rem',
-      }
-    }
+      white: '#ffffff',
+    },
   },
   variants: {
-    opacity: ['responsive', 'hover']
-  }
+    opacity: ['responsive', 'hover'],
+  },
 };

@@ -5,8 +5,19 @@
   import Navbar from './components/Navbar.svelte';
   import routes from './routes';
 
+  const navigation = [
+    {
+      path: '/',
+      name: 'Home',
+    },
+    {
+      path: '/about',
+      name: 'About',
+    },
+  ];
+
   createRouter({ routes });
 </script>
 
-<Navbar />
+<Navbar routes={navigation} />
 <RouterView />

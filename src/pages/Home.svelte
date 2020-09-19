@@ -36,7 +36,8 @@
   <h1>Hello World!</h1>
   <p class="font-bold">This is Boilerplate for svelte application</p>
   <button
-    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    class="border border-green-dark rounded text-green-dark hover:bg-green-dark
+      hover:text-white mt-4 p-4"
     data-testid="counter-button"
     on:click={handleClick}>
     Count is {count}
