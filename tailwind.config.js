@@ -20,6 +20,7 @@ module.exports = {
         darkest: '#4B5842',
       },
       white: '#ffffff',
+      gray: '#2d3748',
     },
   },
   variants: {

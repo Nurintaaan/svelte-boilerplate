@@ -3,6 +3,7 @@
   import RouterView from '@spaceavocado/svelte-router/component/view';
 
   import Navbar from './components/Navbar.svelte';
+  import Footer from './components/Footer.svelte';
   import routes from './routes';
 
   const navigation = [
@@ -19,5 +20,8 @@
   createRouter({ routes });
 </script>
 
-<Navbar routes={navigation} />
-<RouterView />
+<main class="flex flex-col h-screen justify-between">
+  <Navbar routes={navigation} />
+  <RouterView />
+  <Footer />
+</main>
