@@ -9,11 +9,11 @@ $ git clone git@github.com:Nurintaaan/svelte-boilerplate.git
 ```
 install the depedencies needed
 ```sh
-$ npm run install
+$ npm install
 ```
 and if you have an env variable, create your `.env` files by using this command
 ```sh
-$ cp .env.sample .env
+$ cp .env.example .env
 ```
 then you can run your local application, by following command
 ```sh

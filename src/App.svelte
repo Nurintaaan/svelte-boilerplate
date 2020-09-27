@@ -8,7 +8,7 @@
 
   const navigation = [
     {
-      path: '/',
+      path: '/home',
       name: 'Home',
     },
     {

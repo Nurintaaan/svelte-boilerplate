@@ -12,7 +12,7 @@
     <ul class="text-sm lg:flex-grow">
       {#each routes as route}
         <li
-          class="block mt-4 lg:inline-block lg:mt-0 hover:text-white
+          class="nav block mt-4 lg:inline-block lg:mt-0 hover:text-white
             hover:bg-green-medium mr-4">
           <RouterLink to={route.path}>{route.name}</RouterLink>
         </li>
